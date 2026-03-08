@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-warning small mb-2">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsInj52gLySGpFiGNNbkhwNIOvlljwzrlHOg&s"
+              alt="Logo"
+              width="50px"
+              height="50px"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Danh mục khoá học
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Vũ trụ hàng không</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Khĩ thuật gỡ bom</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Lớp học ngụy trang</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Y học</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Chăn nuôi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Câu hỏi</a>
+              </li>
+            </ul>
+            <div class="me-2">
+              <a href="#" class="btn btn-danger" btn-sm>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="16px"
+                  class="me-2"
+                  viewBox="0 0 640 512"
+                >
+                  <path
+                    fill="rgb(253, 251, 251)"
+                    d="M285.7 304c98.5 0 178.3 79.8 178.3 178.3 0 16.4-13.3 29.7-29.7 29.7L77.7 512C61.3 512 48 498.7 48 482.3 48 383.8 127.8 304 226.3 304l59.4 0zM528 80c13.3 0 24 10.7 24 24l0 48 48 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-48 0 0 48c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-48-48 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0 0-48c0-13.3 10.7-24 24-24zM256 248a120 120 0 1 1 0-240 120 120 0 1 1 0 240z"
+                  />
+                </svg>
+                Đăng ký</a
+              >
+            </div>
+            <div class="me-2">
+              <a href="#" class="btn btn-danger" btn-sm>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="rgb(253, 251, 251)"
+                    d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                  />
+                </svg>
+                Đăng nhập</a
+              >
+            </div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control form-control-sm me-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="rgb(238, 72, 33)"
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://i.pinimg.com/736x/8f/f9/4b/8ff94b94625c0bdf4aa1acde457a3881.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/736x/11/b6/72/11b672214bb3b62bd61bd8b303ed868b.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <header class="main-header mt-2">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Học đúng trọng tâm - Làm được ngay</h2>
+            <p>
+              Bạn đang muốn học kỹ năng mới nhưng không biết bắt đầu từ đâu? Các
+              khóa học của chúng tôi được thiết kế ngắn gọn, dễ hiểu, thực hành
+              nhiều, giúp bạn nắm vững kiến thức và áp dụng ngay vào thực tế.
+            </p>
+            <div class="me-2">
+              <a href="#" class="btn btn-danger" btn-sm>
+                <svg
+                  xmlns="https://i.pinimg.com/1200x/f1/af/61/f1af610c7c718a3e2aee4e1f07e84975.jpg"
+                  width="16px"
+                  height="16px"
+                  class="me-2"
+                  viewBox="0 0 640 512"
+                >
+                  <path
+                    fill="rgb(253, 251, 251)"
+                    d="M285.7 304c98.5 0 178.3 79.8 178.3 178.3 0 16.4-13.3 29.7-29.7 29.7L77.7 512C61.3 512 48 498.7 48 482.3 48 383.8 127.8 304 226.3 304l59.4 0zM528 80c13.3 0 24 10.7 24 24l0 48 48 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-48 0 0 48c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-48-48 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0 0-48c0-13.3 10.7-24 24-24zM256 248a120 120 0 1 1 0-240 120 120 0 1 1 0 240z"
+                  />
+                </svg>
+                Đăng ký để học ngay</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="w-100" src="https://i.pinimg.com/1200x/f1/af/61/f1af610c7c718a3e2aee4e1f07e84975.jpg" />
+          </div>
+        </div>
+      </header>
+      <!-- site feature -->
+      <section class="py-4 border-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="feature-item bg-white border rounder py-3 d-flex align-items-center"
+              >
+                <div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABelBMVEVHcEx1WTnNf0/5tFFPT1D2nWEQGiX+0WH6u2b+0V72m1rzimL0jWf4qlP6zGD2kGL0jmBHR0f1mVgUHCT90WX7wVT/23n8yln/02H2oVbzj1//3X/zjWA1ODx0eoUZHyP/323/2Gv+02f///7/2Ff+1WH1lFf+zF39uVAAAAr2oEv+x0/+237/0VL/1Ef/2WX4qUCiSi1QTUp8blopKSz5qUqyWzfn7PjaunP/223+6Lr82JghFQv9v0T/4Yj7wk+aPiTMnVr8tj3+0G/22qxVW2L537hycnXMqZRlZGY6PD99ZUVZSDOEf370ukEMEilHQDr4+PuXo7cSi+Hsy5TBhm+kXE+zYyvlsFnwxlXKr37/45LXu5V8WinsqDTXr1ItMztYNBX/6qPqxWviza//9sG2jDTgqEPluFyrwNyceDhVn9xzkcHo5eahmZIycrZGY4WTrNWpYlzmhj2MgGPHnTWMgWKKf2DM2vYARI0dS4YAUqrDxcpJZo5PF1R0AAAAIHRSTlMA/PS9K0JANykRv8ANkdSilCKylLGfr+mcYO3MYeQ86fkFFEQAAAGsSURBVCiRrdLXUoNAFIBhk5ji2HtXYEkAAZEiSCCmk97tvffe67u7YMYSc+l/x3xzdmAPDQ3/UpPH01Rf3D0YhqIM0+f+O9RGeL2moszscM24m4Dm5TgUtdhdYxaapMJ+aKMrHN7cPMIQq+juDGys0aLOdHormxFzqS1BfHgUhXQil7sT46lUpzknFUmaLgHl/EIqFqULRQGAUTFBsGbHM2RQA9eVSpnaPaKOK6fHIMYhmVHr3G6RZAzwSr1d6giqXybOT4GhIrZuC12ipsVKL5J+lUXU7bNE4rlkMLNZ1+fbxv1aHlzHr95POHW9XC6cAW11tVD9FNteJBoDilJY9nKHceUJGDs7K7Yq2oUV/76xJh3gsBNhz7/vT0ptVWy/3aYoSr+fZFkWxw90+LC+PFBFp296amMjP2mF48HDPIsTXxc4NDEVCfD8Yjg2t7bIh5ZYluj/ulynD+qSLMvJ5Lws23Gapp3fW2mHSs7wfIgPhewYTQd7f+6s2dS5+ZuFhTAWCAQdv7fd4TM5GiUCEZJsrf1PPM2QJ6ZhDk+twVpGOrq6Wgdb6tD/9gHsRFoo5fAJKQAAAABJRU5ErkJggg==">
+                </div>
+                <div>
+                  <h3>Tối ưu thời gian học</h3>
+                  <p>
+                    Nội dung được xây dựng bám sát mục tiêu học tập, giúp học
+                    viên tiếp thu nhanh và áp dụng được ngay.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="feature-item bg-white border rounder py-3 d-flex align-items-center"
+              >
+                <div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAA00lEQVR4AWJwL/ChK2YYtbDw1LM1QAwot15MKISBIIrWYA9pwy5SQnqwhvTyerAMO5E/zwgLyCB7EwyCCgwCjjkQzeLcFQTsb0G0dEJJKokAAgao9Rftn8GMMaqYZhQQMED3BaG7CAgYoOWaqeuBqQFM9szUDAoaazHrB+j+FGRUsMb3PijIqGKa862dBROQUMMoitSC+iFNrx7e0TI48zN6QdA50LmqJwEQD3PuD/IC10GaHJLxueDtW1o/SzuBgq6HB1c9U/1AmY174H7w8q0f4Q2XEndgzz2XggAAAABJRU5ErkJggg==">
+                </div>
+                <div class="ms-2">
+                  <h3>Học mọi lúc, mọi nơi</h3>
+                  <p>
+                    Chỉ cần điện thoại hoặc máy tính có kết nối Internet, bạn có
+                    thể học bất cứ khi nào rảnh, không giới hạn không gian.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="feature-item bg-white border rounder py-3 d-flex align-items-center"
+              >
+                <div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAaVBMVEVHcEz///8AZv/q8/8LaP8KaP8KaP8KaP8Laf8KaP8AYv9Dg///xgDc6v8AWv8AX/71+//L3/8ecPtKhv+ZvP9bkf8pd/+ixP/CqVaEjKKFrf9uhsKPlYv/uQD/sQCLjZH+oQD/2GP/9dQuw+PgAAAACnRSTlMA////q6v/8ie4jYQ/ywAAAPNJREFUOI3Nk91yhCAMhZNoswgiImpXt/vX93/IBtTOdlrZi850ei6YDOcbCAkBUNWBd3QoFYDatROioMz5zBVkD5AjIO8z/xOA3CJi0ppZa5K9uKQImEz/mhS06QeioQ9E3TR1KRLAeVxkyaMdR4u+cce6PsXIPQJet1gYU2Ab/fokkW3iFeM8F4jzbJoVKKL/RhsgCbFFlIw24B59R2EDmDoBJOEVeBf/Kk/KAZcpB8gVt9tVZ4D2eL6cH5L8Dnx9pgDsZZNjRX4qVFToB+kChaXU5rPUhlYgdYl3mvUXH+a3wNPBqfLAy/PhBVXuj3+l4APMAx9K0I/CXAAAAABJRU5ErkJggg==" />
+                </div>
+                <div class="ms-2">
+                  <h3>Giảng viên đồng hành</h3>
+                  <p>
+                    Trong suốt quá trình học, bạn được hướng dẫn chi tiết, giải
+                    đáp thắc mắc và hỗ trợ kịp thời khi gặp khó khăn.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- course -->
+      <div class="container">
+        <div class="row py-3">
+          <h3 class="text-center text-danger">KHOÁ HỌC NỔI BẬT</h3>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/0c/30/ec/0c30ecfdee21ee5b0694eb39a65fb464.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  5 Bước để hoàn thành 1 món ăn ngon
+                </h5>
+                <p class="card-text">
+                  Giúp bạn nấu ăn ngon hơn, có thể tự tay làm ra những món ăn hấp dẫn cho gia đình và bạn bè, từ những nguyên liệu đơn giản nhất.
+                </p>
+                <div class="text-center">
+                  <span class="rounded-pill text-bg-warning px-2 py-1 me-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16px"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="rgb(7, 7, 7)"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                      />
+                    </svg>
+                    Rating 5.0
+                  </span>
+                  <span class="rounded-pill text-bg-success px-2 py-1 mb-3">
+                    Giá bán: 45tỷ vnđ 
+                  </span>
+                </div>
+                <div class="text-center mt-2">
+                  <a href="#" class="btn btn-primary">Xem chi tiết khoá học</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/4d/e5/d7/4de5d7a4a15bc1ac7f6bdb5bf3ba5c47.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                Cách vượt tường lữa wf của trường ĐH 
+                </h5>
+                <p class="card-text">
+                  giúp bạn dowload phần mềm miễn phí vì bạn là vô giá 
+                </p>
+                <div class="text-center">
+                  <span class="rounded-pill text-bg-warning px-2 py-1 me-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16px"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="rgb(7, 7, 7)"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                      />
+                    </svg>
+                    Rating 4
+                  </span>
+                  <span class="rounded-pill text-bg-success px-2 py-1 mb-3">
+                    Giá bán: 1.000.000 vnđ
+                  </span>
+                </div>
+                <div class="text-center mt-2">
+                  <a href="#" class="btn btn-primary">Xem chi tiết khoá học</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/e8/5a/a6/e85aa67bbde19f873fffd026d95d31c7.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                 1001 cách đa câp 
+                </h5>
+                <p class="card-text">
+                  1001 cách đa câp hiệu quả chop nhười mới bắt đầu, giúp bạn nhanh chóng đạt được mục tiêu tài chính.
+                </p>
+                <div class="text-center">
+                  <span class="rounded-pill text-bg-warning px-2 py-1 me-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16px"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="rgb(7, 7, 7)"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                      />
+                    </svg>
+                    Rating 3
+                  </span>
+                  <span class="rounded-pill text-bg-success px-2 py-1 mb-3">
+                    Giá bán: 100.000 vnđ
+                  </span>
+                </div>
+                <div class="text-center mt-2">
+                  <a href="#" class="btn btn-primary">Xem chi tiết khoá học</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="text-bg-dark py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./images/happy-academy-logo.png" width="100px" />
+              <p>
+                Địa chỉ: Đường Hồ Chí Minh, Quận 5, TP. HCM <br />
+                Điện thoại: 0334279402<br />
+                Email: nhuc9499@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h6>DANH MỤC KHOÁ HỌC</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-decoration-none text-secondary" href="#"
+                    >Vũ trụ hàng không</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-secondary" href="#"
+                    >Khoa học tự nhiên</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-secondary" href="#"
+                    >Kỹ năng mềm</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-secondary" href="#"
+                    >Y học</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-secondary" href="#"
+                    >Nông nghiệp</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Follow chúng tôi để biết thêm về khóa học</h6>
+              <div>
+                <a href="#" class="btn btn-sm btn-primary rounded-pill">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="rgb(253, 251, 251)"
+                      d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z"
+                    />
+                  </svg>
+                  <span>facebook</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-success rounded-pill">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="rgb(253, 251, 251)"
+                      d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103l0-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                    />
+                  </svg>
+                  <span>Twitter</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-danger rounded-pill">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16px"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="rgb(253, 251, 251)"
+                      d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                    />
+                  </svg>
+                  <span>Youtube</span>
+            
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="copyright text-center">
+            Học trực tuyến tại nhà tôi - Học đúng trọng tâm, làm được
+            ngay. Bản quyền © 2026 Happy vì được học. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
